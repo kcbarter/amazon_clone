@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styling/header.css';
 
-
 function Header() {
     return (
         <div className='header'>
@@ -10,7 +9,7 @@ function Header() {
 
             <div className="header_search">
                 <input className="header_searchIn"/>
-                {/*Logo */}
+                {/* <SearchIcon className="header_searchIcon" /> */}
             </div>
             <div className="header_nav">
                 <div className='header_option'>
