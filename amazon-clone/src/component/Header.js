@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styling/header.css';
 
+
 function Header() {
     return (
         <div className='header'>
-            <img className='header_logo'
+            <img className='header_logo' alt='amazon_logo'
             src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
 
             <div className="header_search">
