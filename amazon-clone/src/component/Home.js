@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styling/home.css'
+import '../styling/home.css';
+import Product from './Product.js';
 
 function Home() {
     return (
@@ -11,7 +12,7 @@ function Home() {
                  />
 
                  <div className='home_row'>
-
+                    <Product />
                  </div>
                  
                  <div className='home_row'>
