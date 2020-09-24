@@ -6,9 +6,10 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 function Header() {
     return (
         <div className='header'>
-            <img className='header_logo' alt='amazon_logo'
-            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
-
+            <a href='/'>
+                <img className='header_logo' alt='amazon_logo'
+                src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
+            </a>
             <div className="header_search">
                 <input className="header_searchIn"/>
                 <SearchIcon className="header_searchIcon" />
@@ -39,7 +40,9 @@ function Header() {
                     </span>
                 </div>
                 <div className='header_basketOption'>
-                    <ShoppingBasketIcon className='shopping_basket'/>
+                    <a href='/checkout'>
+                        <ShoppingBasketIcon className='shopping_basket'/>
+                    </a>
                     <span className='header_optionTwo header_basketCount'>0</span>
                 </div>
             </div>

@@ -66,3 +66,11 @@
     height: 22px !important;
     background-color: #cd9042;
 }
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
