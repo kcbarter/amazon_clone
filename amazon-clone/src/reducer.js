@@ -1,5 +1,6 @@
 export const intialState = {
     basket: [],
+    user: null
 };
 
 //Selector: basically a for loop.
@@ -31,6 +32,11 @@ const reducer = (state, action) => {
             return{
                 ...state,
                 basket: newBasket
+            }
+        case "SET_USER":
+            return {
+                ...state,
+                user: action.user
             }
         default:
             return state;
