@@ -4,10 +4,15 @@ import { useStateValue } from '../StateProvider';
 import '../styling/payment.css';
 import CheckoutProduct from './CheckoutProduct';
 import { Link }  from 'react-router-dom';
+import { CardElement ,useElements, useStripe } from '@stripe/react-stripe-js';
 
 function Payment() {
     const history = useHistory();
     const[{ basket, user  }, dispatch] = useStateValue();
+
+    const stripe = useStripe();
+    const elements = useElements();
+
     return (
         <div className="payment">
             <h1>Checkout (<Link to='/checkout' id="link">{basket?.length} items</Link>)</h1>
@@ -45,7 +50,9 @@ function Payment() {
                         <h3>Payment Method</h3>
                     </div>
                     <div className="payment_details">
-                        
+                        <form>
+                            <CardElement />
+                        </form>
                     </div>
                 </div>
             </div>
